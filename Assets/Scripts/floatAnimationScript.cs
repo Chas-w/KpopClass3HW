@@ -11,8 +11,9 @@ public class floatAnimationScript : MonoBehaviour
     Vector3 p1, p2;
 
     float t;
-    float jumpForce = 3f;
-    bool jumping = false; 
+    //float jumpForce = 3f;
+    //bool jumping = false; 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,32 +26,17 @@ public class floatAnimationScript : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        /*
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (t <= 0)
         {
-            jumping = true;
-            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            dir = 1;
         }
-        if (Input.GetKeyUp(KeyCode.Space))
+        else if (t >= .5)
         {
-            jumping = false;
+            dir = -1;
         }
-        */
-        if (!jumping)
-        { 
 
-            if (t <= 0)
-            {
-                dir = 1;
-            }
-            else if (t >= .5)
-            {
-                dir = -1;
-            }
+        t += dir * Time.fixedDeltaTime;
 
-            t += dir * Time.fixedDeltaTime;
-
-            rb.MovePosition(Vector3.Lerp(p1, p2, t));
-        }
+        rb.MovePosition(Vector3.Lerp(p1, p2, t));
     }
 }
