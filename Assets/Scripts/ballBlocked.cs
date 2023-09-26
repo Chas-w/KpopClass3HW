@@ -4,36 +4,36 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 
-public class goalPointCounter : MonoBehaviour
+public class ballBlocked : MonoBehaviour
 {
-    float opponentGoals = 18f;
-    float lives;
-
-    [SerializeField] TMP_Text liveText;
+    float gameCountDown = 30f;
+    float ballsBlocked;
+    [SerializeField] TMP_Text count;
     // Start is called before the first frame update
     void Start()
     {
-        
+       
     }
-
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Ball")
         {
-            opponentGoals--;
             Destroy(collision.gameObject);
         }
     }
-
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        lives = opponentGoals / 2;
-        liveText.text = $"Lives : {lives.ToString()}";
-
-        if (lives <= 0)
+        
+       if (gameCountDown >= 0)
         {
-            SceneManager.LoadScene("LoseScene");
+            gameCountDown-= Time.deltaTime;
+            Debug.Log(gameCountDown);
+            count.text = $"Time: {gameCountDown.ToString()}";
+        }
+       if (gameCountDown <= 0)
+        {
+            SceneManager.LoadScene("WinScene");
         }
     }
 }

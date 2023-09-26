@@ -7,6 +7,7 @@ TagManager:
   - Goal
   - Ball
   - despawn
+  - Water
   layers:
   - Default
   - TransparentFX

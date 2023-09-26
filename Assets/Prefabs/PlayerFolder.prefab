@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 206913141}
   m_Layer: 0
   m_Name: PlayerLeg
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 206913139}
   m_LocalRotation: {x: -0, y: -0, z: 0.95636594, w: 0.29217157}
-  m_LocalPosition: {x: -0.67, y: -1.31, z: -0.030884415}
+  m_LocalPosition: {x: -0.67, y: -1.51, z: -1}
   m_LocalScale: {x: 0.34375182, y: 1.274811, z: 1.053}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -151,7 +151,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.0034934124, y: -0.381472}
-  m_ConnectedAnchor: {x: -0.50000006, y: -0.5}
+  m_ConnectedAnchor: {x: -0.50000006, y: -0.6366027}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -171,7 +171,7 @@ GameObject:
   - component: {fileID: 371286458}
   m_Layer: 0
   m_Name: floatPosition
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -206,7 +206,7 @@ GameObject:
   - component: {fileID: 697558689}
   m_Layer: 0
   m_Name: PlayerLeg (1)
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -219,7 +219,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 697558687}
   m_LocalRotation: {x: 0, y: 0, z: -0.95636606, w: 0.29217145}
-  m_LocalPosition: {x: 0.67, y: -1.31, z: -0.030884415}
+  m_LocalPosition: {x: 0.67, y: -1.51, z: -1}
   m_LocalScale: {x: 0.34375182, y: 1.274811, z: 1.053}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -342,7 +342,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0.020047378, y: -0.39903992}
-  m_ConnectedAnchor: {x: 0.4659781, y: -0.49040356}
+  m_ConnectedAnchor: {x: 0.4659781, y: -0.62700623}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -364,7 +364,7 @@ GameObject:
   - component: {fileID: 2104548903}
   m_Layer: 0
   m_Name: PlayerHead
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -468,7 +468,7 @@ GameObject:
   - component: {fileID: 1092964230}
   m_Layer: 0
   m_Name: PlayerBody
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -639,7 +639,7 @@ GameObject:
   - component: {fileID: 5507392270041440070}
   m_Layer: 0
   m_Name: PlayerOtherBicep
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -652,7 +652,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5507392270041440191}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.872858, y: 0.3331, z: 0}
+  m_LocalPosition: {x: -0.872858, y: 0.4513, z: 0}
   m_LocalScale: {x: 0.55523884, y: 0.3272076, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -773,7 +773,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0.5970149, y: 0.17995138}
-  m_ConnectedAnchor: {x: -0.67621285, y: 0.38657293}
+  m_ConnectedAnchor: {x: -0.67621285, y: 0.46730506}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -836,7 +836,7 @@ GameObject:
   - component: {fileID: 5507392270558419578}
   m_Layer: 0
   m_Name: PlayerBicep
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -849,7 +849,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5507392270558419572}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.8825049, y: 0.3331, z: 0}
+  m_LocalPosition: {x: 0.8825049, y: 0.4513, z: 0}
   m_LocalScale: {x: 0.3301283, y: 0.5626102, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -970,7 +970,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0.17835915, y: 0.597015}
-  m_ConnectedAnchor: {x: 0.6725284, y: 0.3865729}
+  m_ConnectedAnchor: {x: 0.6725284, y: 0.46730506}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -1002,7 +1002,7 @@ GameObject:
   - component: {fileID: 5507392270706780343}
   m_Layer: 0
   m_Name: PlayerFolder
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1045,7 +1045,7 @@ GameObject:
   - component: {fileID: 5507392271560670096}
   m_Layer: 0
   m_Name: PlayerOtherForarm
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1058,7 +1058,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5507392271560670091}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.7321, y: 0.3348, z: 0}
+  m_LocalPosition: {x: -1.7321, y: 0.453, z: 0}
   m_LocalScale: {x: 0.56714934, y: 0.32725316, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1203,7 +1203,7 @@ GameObject:
   - component: {fileID: 5507392271654319123}
   m_Layer: 0
   m_Name: PlayerForarm
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1216,7 +1216,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5507392271654319116}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 1.7145, y: 0.3318, z: 0}
+  m_LocalPosition: {x: 1.7145, y: 0.45000002, z: 0}
   m_LocalScale: {x: 0.33012834, y: 0.56282574, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

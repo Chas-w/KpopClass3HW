@@ -10,6 +10,8 @@ public class spawnBallScript : MonoBehaviour
     [SerializeField] GameObject ball;
     [SerializeField] GameObject ballThrowScript;
 
+    GameObject newBall;
+
     float throwCountDown = 100f;
     float ballCounter;
 
@@ -31,21 +33,24 @@ public class spawnBallScript : MonoBehaviour
 
             if (throwCountDown <= 0)
             {
-                spawnRightLeft = Random.Range(0, 1);
-
-                if (spawnRightLeft <= 0)
+                spawnRightLeft = Random.Range(0f, 1f);
+                if (spawnRightLeft <= .5f)
                 {
-                    Instantiate(ball, spawnLeft.transform.position, spawnLeft.transform.rotation);
+                    newBall = Instantiate(ball, spawnLeft.transform.position, spawnLeft.transform.rotation);
                     throwCountDown = 100f;
                     ballCounter++;
                 }
-                if (spawnRightLeft >= 1)
+                if (spawnRightLeft >= .5f)
                 {
                     Instantiate(ball, spawnRight.transform.position, spawnRight.transform.rotation);
                     throwCountDown = 100f;
                     ballCounter++;
                 }
             }
+        }
+        if (newBall == null)
+        {
+            ballCounter = 0; 
         }
     }
 }

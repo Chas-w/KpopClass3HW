@@ -11,21 +11,11 @@ public class ballThrow : MonoBehaviour
     float throwForce = 2f;
     float throwingPeriod = 10f;
 
-    public bool gone = false;
     // Start is called before the first frame update
     void Start()
     {
         ballBody = GetComponent<Rigidbody2D>();
         self = GetComponent<GameObject>();
-    }
-
-    void OnTriggerEnter2D(Collider2D collision)
-    {
-       if (collision.gameObject.tag == "despawn")
-        {
-            gone = true;
-            Destroy(self);
-        } 
     }
 
     // Update is called once per frame
